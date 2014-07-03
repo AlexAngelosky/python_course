@@ -1,3 +1,4 @@
+import fresh_tomatoes
 import movie
 
 toy_story = movie_archive.Film("Toy Story",
@@ -10,4 +11,9 @@ the_mask = movie_archive.Film("The mask",
                         "http://image.tmdb.org/t/p/original/7plBoAhunhRVVmNCVMVo47Ede53.jpg",
                             "https://www.youtube.com/watch?v=zwGxBZh6gRk")
 
-print(toy_story.storyline)
+#print(toy_story.storyline)
+#the_mask.see_poster()
+
+
+the_films = [toy_story, the_mask]
+fresh_tomatoes.open_movies_page(the_films)
